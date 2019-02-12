@@ -1,0 +1,313 @@
+/*
+* 
+* @author Jamilton Damasceno
+*/
+
+/* Layout */
+
+html, body, #home{
+    height: 100%;
+}   
+
+
+body {
+    
+    background: url(../imagens/capa.png),
+                linear-gradient(50deg,#000000,#000000);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	background-position: center center;
+    font-family: Helvetica,Arial,sans-serif;
+    
+}
+
+
+/*icone*/
+
+.branco{
+    color: #550a03;
+}
+
+.icone{
+    color: #550a03;
+    padding: 20px 0px;
+}
+
+.icone2{
+    color: #ffffff;
+    margin: 40px 30px;
+    
+}
+
+/* Navegação */
+
+nav.navbar-transparente{
+    padding: 5px 0px;
+    background: rgba(140,13,4,0.95);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #043f11;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(255,255,255,0.5);
+}
+
+/* capa */
+
+.capa{
+     text-align: center;
+}
+
+.btn-custom {
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-roxo{
+    background: #8b1207;    
+}
+
+.btn-roxo:hover{
+    background: #550a03;
+    color: white;
+}
+
+.btn-branco{
+    background: #8b1207;    
+}
+
+.btn-branco:hover{
+    background: #550a03;
+    color: white;
+}
+
+/*conteúdos*/
+
+#redes{
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 0px;
+    padding-bottom: 0px;
+    
+}
+
+#redes h2{
+    color: white;
+    font-size: 3em;
+    
+}
+
+#servicos{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;  
+}
+
+#servicos h2{
+    padding: 20px 0px;
+}
+
+#servicos h2, h3{
+    color: #8b1207;
+    
+}
+
+.albuns {
+    padding: 10px 0px;
+    
+}
+
+.centro{
+    text-align: center;
+    padding: 30px 0px;
+    
+}
+
+.Sizeup {
+    font-size: 1.3rem;
+    
+}
+
+/*rodapé*/
+
+footer{
+    
+    background: #03270b;
+    padding: 10px 30px;
+    
+}
+
+/*tipografia*/
+
+h1 {
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2{
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: -0,04em;
+    
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0,04em;
+    
+}
+
+footer h4{
+    
+    text-align: right;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: -0,04em;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    
+    
+    .icone2{
+        font-size: 4em
+    }
+    
+    nav.navbar-transparente{
+    padding: 5px 15px;
+}
+    
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    h2{
+        font-size: 3em
+    }
+    
+    h1{
+        font-size: 3em;
+    }
+    
+    .btn-custom{
+        margin: 10px 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+    h2{
+        font-size: 4em
+    }
+    
+    h1{
+        font-size: 4em;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    
+    
+    
+    h1{
+        font-size: 5em;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+    body{
+        background-size: 100%;
+        
+    }
+    h1{
+        font-size: 6em;
+    }
+}
+
+/*Foi aplicado o display-4 para dar um destaque no texto*/
+.display-4{
+    text-align: center;
+    color: white;
+    font-family: 'Georgia';
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+/*Formatando o botão Comprar*/
+.btn-comprar{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/*Formatação da imagem dos produtos, nessa configuração ela volta a coloração normal após o ponteiro do 
+ mouse sair de cima da imagem*/
+.img-fluid{
+    -webkit-filter:grayscale(0%); /*Imagem normal sem o mouse posicionado*/
+}
+
+/*Imagem escurece quando o ponteiro do mouse for posicionado em cima dela*/
+.img-fluid:hover{
+    -webkit-filter:grayscale(40%);
+}
+
+/*Texto de confirmação de compra, centralizado, e com número de pedido gerado por função no JS*/
+.caixa_dialog{
+    text-align: center;
+    color: white;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 40px;
+    margin: auto;
+    width: 80%;
+    padding: 150px;
+}
+
+/*Formatação do visual e posição do número aleatório*/
+#pedido{
+    text-align: center;
+    font-family: Helvetica,Arial,sans-serif;
+    color: white;
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+#ini{
+    margin-bottom: 10px;
+    border: 1px solid red;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+/*Formatando botão que retorna a página index*/
+.logo_ini{
+    width: 50px;
+    height: 50px;
+}
+
+/*Coloração do texto*/
+.pg_ini{
+    color: white;
+}
+
